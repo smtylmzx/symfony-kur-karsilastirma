@@ -80,11 +80,6 @@ class ExchangeAPIController extends AbstractController
         return new Response("Status: OK!");
     }
 
-    public function setProviderClassRequest($row, $kurRegister)
-    {
-
-    }
-
     public function requestHttpClient($provider)
     {
         $httpClient = HttpClient::create();
