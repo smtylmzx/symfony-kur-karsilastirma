@@ -40,4 +40,7 @@ Son olarak eklenen class provider_list.json dosyasına eklenmelidir.
 
 ![](https://raw.githubusercontent.com/smtylmzx/symfony-kur-karsilastirma/master/doc/providerlist.png)
 
+Son olarak, projede veri tabanında id'si 1 olan bir kayıt olduğu varsayılmıştır.
+Veri tabanı işlemlerinin çalışması için veri tabanını oluşturduktan sonra id'si 1 olan boş bir kayıt eklemeyi unutmayın.
+
 **Hepsi bu kadar :)
