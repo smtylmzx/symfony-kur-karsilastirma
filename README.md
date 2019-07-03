@@ -1,6 +1,6 @@
 ### Exchange Compare - Kur Karşılaştır
 
-- Farklı sağlayıcılardan güncel kur bilgilerini alır, en uygun olanı bulur ve ve veri tabanına kaydını gerçekleştirir.
+- Farklı sağlayıcılardan güncel kur bilgilerini alır, en uygun olanı bulur ve veri tabanına kaydını gerçekleştirir.
 - Gereklilik; Symfony 4.3.2, Bootstrap 4.3.1, Composer
 
 
