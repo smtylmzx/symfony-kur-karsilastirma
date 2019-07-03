@@ -22,9 +22,6 @@ class ExchangeAPIController extends AbstractController
         $tempEuro = 99;
         $tempSterlin = 99;
 
-        var_dump(ClassMapGenerator::createMap(__DIR__.'/library'));
-
-
         //add-on mantigi olusturmak uzere providerlar bir json listede tutulmaktadir
         //burada provider listesi alinip decode edilmektedir
         $path = __DIR__.'/../../src/Providers/provider_list.json';
