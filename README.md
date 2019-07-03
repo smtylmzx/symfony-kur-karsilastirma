@@ -36,7 +36,7 @@ Class eklendikten sonra ilgili ayarları yapılmalıdır.
 
 ![](https://raw.githubusercontent.com/smtylmzx/symfony-kur-karsilastirma/master/doc/providersetting.png)
 
-Son olarak eklenen class provider_list.json dosyasına eklenmelidir.
+Eklenen class provider_list.json dosyasına eklenmelidir.
 
 ![](https://raw.githubusercontent.com/smtylmzx/symfony-kur-karsilastirma/master/doc/providerlist.png)
 
