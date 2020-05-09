@@ -44,3 +44,5 @@ Eklenen class provider_list.json dosyasına eklenmelidir.
 Veri tabanı işlemlerinin çalışması için veri tabanını oluşturduktan sonra id'si 1 olan boş bir kayıt eklemeyi unutmayın.
 
 **Hepsi bu kadar :)
+
+### Exchange Master-V2 - Update: 2020
