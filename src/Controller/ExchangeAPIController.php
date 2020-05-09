@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ExchangeAPIController extends AbstractController
 {
     /**
-     * @Route("/api")
+     * @Route("/api", name="api_run")
      * @return Response
      */
     public function index(): Response

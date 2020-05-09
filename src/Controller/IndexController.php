@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class IndexController extends AbstractController
 {
     /**
-     * @Route("/")
+     * @Route("/", name="compare_homepage")
      * @return Response
      */
     public function index(): Response
