@@ -2,22 +2,21 @@
 
 namespace App\Repository;
 
-use App\Entity\EnuygunKurlar;
-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Symfony\Bridge\Doctrine\RegistryInterface;
+use App\Entity\ProviderExchange;
+use Doctrine\ORM\EntityRepository;
 
 /**
- * @method EnuygunKurlar|null find($id, $lockMode = null, $lockVersion = null)
- * @method EnuygunKurlar|null findOneBy(array $criteria, array $orderBy = null)
- * @method EnuygunKurlar[]    findAll()
- * @method EnuygunKurlar[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method ProviderExchange|null find($id, $lockMode = null, $lockVersion = null)
+ * @method ProviderExchange|null findOneBy(array $criteria, array $orderBy = null)
+ * @method ProviderExchange[]    findAll()
+ * @method ProviderExchange[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class EnuygunKurlarRepository extends ServiceEntityRepository
+class EnuygunKurlarRepository extends EntityRepository
 {
-    public function __construct(RegistryInterface $registry)
-    {
-        parent::__construct($registry, EnuygunKurlar::class);
-    }
+//    public function __construct(RegistryInterface $registry)
+//    {
+//        parent::__construct($registry, EnuygunKurlar::class);
+//    }
 
     // /**
     //  * @return EnuygunKurlar[] Returns an array of EnuygunKurlar objects

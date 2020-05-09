@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Entity\EnuygunKurlar;
+use App\Entity\ProviderExchange;
 use App\Service\KurFacadeService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpClient\HttpClient;
@@ -70,7 +70,7 @@ class ExchangeAPIController extends AbstractController
 
         //bu kisimin calismasi icin veritabaninda id si 1 olan kayit oldugu varsayilmistir
         //id si 1 olan kayit istek geldikce guncellenmektedir
-        $doviz = $entityManager->getRepository(EnuygunKurlar::class)->find(1);
+        $doviz = $entityManager->getRepository(ProviderExchange::class)->find(1);
 
         $doviz->setDOLAR($tempDolar);
         $doviz->setEURO($tempEuro);
