@@ -15,7 +15,7 @@ class ExchangeAPIController extends AbstractController
      * @Route("/api")
      * @return Response
      */
-    public function index()
+    public function index(): Response
     {
         //doviz degerlerine varsayilan olarak yuksek TL degerleri girilmistir
         $tempDolar = 99;
@@ -44,7 +44,7 @@ class ExchangeAPIController extends AbstractController
 
             //Eger donen deger 1 e esitse bir ust key e sahip oldugu anlasilmaktadir. Orn: result or name
             //Ust key algilandiginda bir alt dizine ilerlenmektedir
-            if (count($responseSwap) == 1) {
+            if (count($responseSwap) === 1) {
                 $iter = array_keys($responseSwap);
                 $responseSwap = $responseSwap[$iter[0]];
             }
@@ -80,7 +80,7 @@ class ExchangeAPIController extends AbstractController
         return new Response("Status: OK!");
     }
 
-    public function requestHttpClient($provider)
+    public function requestHttpClient($provider): array
     {
         $httpClient = HttpClient::create();
         //Ilgili URL e GET methodu ile istek atildi

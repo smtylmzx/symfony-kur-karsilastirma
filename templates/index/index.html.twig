@@ -19,18 +19,27 @@
                 </tr>
                 </thead>
                 <tbody>
+                {% for result in results if results is not empty %}
+                    <tr>
+                        <td style="color: red;" colspan="2">{{ result.provider }}</td>
+                    </tr>
                     <tr>
                         <td class="text-right font-weight-bold w-50">DOLAR</td>
-                        <td>{{ result.DOLAR }} ₺</td>
+                        <td>{{ result.dollar }} ₺</td>
                     </tr>
-                <tr>
-                    <td class="text-right font-weight-bold w-50">EURO</td>
-                    <td>{{ result.EURO }} ₺</td>
-                </tr>
-                <tr>
-                    <td class="text-right font-weight-bold w-50">STERLIN</td>
-                    <td>{{ result.STERLIN }} ₺</td>
-                </tr>
+                    <tr>
+                        <td class="text-right font-weight-bold w-50">EURO</td>
+                        <td>{{ result.euro }} ₺</td>
+                    </tr>
+                    <tr>
+                        <td class="text-right font-weight-bold w-50">STERLIN</td>
+                        <td>{{ result.sterling }} ₺</td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td style="color: red;" colspan="2">Kayıt bulunamadı.</td>
+                    </tr>
+                {% endfor %}
                 </tbody>
             </table>
         </div>

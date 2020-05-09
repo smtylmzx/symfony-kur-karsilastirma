@@ -13,13 +13,12 @@ class IndexController extends AbstractController
      * @Route("/")
      * @return Response
      */
-    public function index()
+    public function index(): Response
     {
-
-        $doviz = $this->getDoctrine()->getRepository(ProviderExchange::class)->find(1);
+        $results = $this->getDoctrine()->getRepository(ProviderExchange::class)->findAll();
 
         return $this->render("index/index.html.twig", [
-            'result' => $doviz
+            'results' => $results
         ]);
     }
 }
