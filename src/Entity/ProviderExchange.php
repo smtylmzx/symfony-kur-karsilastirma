@@ -6,7 +6,7 @@ use App\Traits\TimestampleTrait;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\EnuygunKurlarRepository")
+ * @ORM\Entity()
  */
 class ProviderExchange
 {

@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\ProviderExchange;
-use App\Service\KurFacadeService;
+use App\Service\ExchangeWrapper;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Component\HttpFoundation\Response;
@@ -30,7 +30,7 @@ class ExchangeAPIController extends AbstractController
 
         //Providerlarin ortak noktasi olan servisten nesne turetilmistir
         //Bu nesne uzerinden tum providerlara erisim mumkundur
-        $kurService = new KurFacadeService();
+        $kurService = new ExchangeWrapper();
 
         //buradaki foreach dongusunde providerlarin tanimlanan ozellikleri okunmaktadir
         foreach ($jsonArray["name"] as $row) {
